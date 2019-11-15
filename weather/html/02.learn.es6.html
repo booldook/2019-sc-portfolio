@@ -1,0 +1,86 @@
+<script>
+// JS의 중요 객체와 메서드 - 내장객체: Array, String, Date, Math
+// 메소드(method) - 객체(Object) 안에서 선언된 함수
+const log = console.log;
+const clear = console.clear;
+
+// ES5 객체
+const human = {
+	age: 25,
+	name: "홍길동",
+	speak: function() {
+		log(this.name + "이(가) 말한다");
+	} 
+}
+const human2 = {
+	age: 28,
+	name: "홍길순",
+	speak: function() {
+		log(this.name + "이(가) 말한다");
+	} 
+}
+human2.name = "홍길순";
+human2.height = 175;
+log(human2.height);
+
+log(human.age);
+human.age = 30;
+log(human.age);
+log(human.name);
+human.speak();
+
+log(human2.name);
+human2.speak();
+
+clear();
+var arr3 = new Array();
+arr3.leng = "333";
+log(arr3.leng);
+arr3.speak = function(){
+	console.log("저는 배열입니다.");
+}
+arr3.speak();
+
+// IIFE // ES5
+const Human = (function(){
+	this.age;
+	this.name;
+	function Human(age, name) {
+		this.age = age;
+		this.name = name;
+	}
+	Human.prototype.speak = function(){
+		console.log(this.name + "이(가) "+this.age+" 세 라고 말한다.");
+	}
+	return Human;
+}());
+
+clear();
+var hong = new Human(30, "홍길동");
+var hong2 = new Human(28, "홍길순");
+hong.speak();
+hong2.speak();
+
+const Slide = (function(){
+	//생성자 - Constructor
+	function Slide(_obj, _type, duration, delay) {
+
+	}
+	return Slide;
+}());
+
+// ES6 객체
+class HumanES6 {
+	constructor(_age, _name) {
+		this.age = _age;
+		this.name = _name;
+	}
+	speak() {
+		log(this.name + "이(가) " + this.age + " 세 라고 외칩니다.");
+	}
+}
+const hong3 = new HumanES6(25, "홍길동");
+const hong4 = new HumanES6(28, "홍길영");
+hong3.speak();
+hong4.speak();
+</script>

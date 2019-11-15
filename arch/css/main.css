@@ -1,0 +1,26 @@
+/* header */
+.header {background-color: #fff; padding: 8px 16px; 
+	position: fixed; z-index: 9999; width: 100%;
+	box-shadow: 0 0 8px rgba(0,0,0,0.4); letter-spacing: 4px;}
+.header > .logo {float: left; padding: 8px; cursor: pointer;}
+.header > .logo:hover {background-color: #ccc;}
+.header > .navis {float: right;}
+.header .navi {float: left; cursor: pointer; padding: 8px 16px;}
+.header .navi:hover {background-color: #ccc;}
+
+.wrap {max-width: 1500px; margin: auto;}
+
+/* 
+transform 
+
+*/
+
+/* bans */
+.bans {position: relative;}
+.bans > .ban-tit {position: absolute; 
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
+	font-size: 40px; color: #fff; letter-spacing: 5px;}
+.bans > .ban-tit > span {background-color: #000; padding: 6px 12px; 
+	opacity: 0.7;}
+
+

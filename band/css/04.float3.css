@@ -1,0 +1,4 @@
+.wrap {width: 100%; border: 10px solid red;}
+.box1 {background-color: orange; width: 50%; padding: 20px; float: left;}
+.box2 {background-color: green; width: 50%; padding: 20px; float: left;}
+

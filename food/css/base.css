@@ -1,0 +1,39 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+/* 순서를 나타내는 리스트 */
+ol, ul, li, dl, dt, dd {
+	list-style: none;
+}
+
+img {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 공통클래스 */
+.clear:after {
+	display: block;
+	content: '';
+	clear:both;
+}
+.img { width: 100%; }
+.img2 { max-width: 100%; }
+/* .img-wrap { line-height: 0.9; } */
+

@@ -1,0 +1,74 @@
+<script>
+// String
+const log = console.log;
+const clear = console.clear;
+
+var str = "Hello World ";
+log(str.length);
+
+var str2 = str.replace("World", "Heaven");
+log(str2);
+
+var str3 = str.repeat(3);
+log(str3);
+
+// 배열을 문자열로 변환
+var arr = ["홍길동", "홍길만", "홍길순"];
+var str4 = arr.toString();
+log(str4);
+
+clear();
+// 문자열을 배열로 변환 - split("문자"): 문자를 기준으로 문자열을 잘라서 배열로 변환
+var arr = str4.split(",");
+log(arr);
+
+var str = "ABCDEFGHIJKLMN";
+var arr = str.split("");
+log(arr);
+
+// 주문내역 - 상품3개를 구매: (id, price, size, color, cnt)
+var order = "1//2000//95//red//2^^3//40000//////1^^20//2500//free//white//3";
+var orderTmp = order.split("^^");
+log(orderTmp);
+var orderArr = [];
+for(var i in orderTmp) {
+	orderArr[i] = [];
+	orderArr[i] = orderTmp[i].split("//");
+}
+log(orderArr);
+
+var orderObj = [];
+var tmp;
+orderTmp.forEach((v, i) => {
+	tmp = v.split("//");
+	orderObj[i] = {};
+	orderObj[i].id = tmp[0];
+	orderObj[i].price = tmp[1];
+	orderObj[i].size = tmp[2];
+	orderObj[i].color = tmp[3];
+	orderObj[i].cnt = tmp[4];
+});
+log(orderObj);
+
+clear();
+// indexOf(), toUpperCase(), toLowerCase()
+var str = "Hello World";
+var result = str.indexOf("hel");	//찾으면 문자열 시작 index를 반환, 못찾으면 -1 반환
+log(result);
+
+// 검색어: World
+var str = [
+	{id: 1, desc:"Hello World"}, 
+	{id: 2, desc: "Hi~ woRld"},
+	{id: 3, desc: "hello world"}, 
+	{id: 4, desc: "hello word"}
+];
+var search = "World";
+var result = [];
+str.forEach((v, i) => {
+	if(v.desc.toLowerCase().indexOf(search.toLowerCase()) > -1) result.push(v);
+});
+log(result);
+result = str.filter((v) => v.desc.toLowerCase().indexOf(search.toLowerCase()) > -1);
+log(result);
+</script>

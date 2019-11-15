@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>성적관리 프로그램</title>
+	<link rel="stylesheet" href="css/fa.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base-bootstrap.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h2>
+				성적관리 애플리케이션<br>
+				<small class="pl-3 text-secondary">Ajax를 이용한 성적관리 SPA</small>
+				<!-- <button class="btn btn-primary" id="bt-data-test" data-id="5" data-show-text="보여줘" data-hide-text="가려줘">data()</button> -->
+				<!-- <button class="btn btn-primary" onclick="sample();">Javascript 인라인 코딩</button> -->
+			</h2>
+		</div>
+	</div>
+	<div class="container my-5">
+		<form name="scoreForm">
+			<div>
+				<i class="fas fa-edit"></i>
+				<span class="f-125">성적 입력</span>
+			</div>
+			<div class="border my-2 p-3">
+				<div class="row">
+					<div class="col-md-2 py-1">
+						<input type="text" class="form-control" placeholder="이름">
+					</div>
+					<div class="col-md-2 py-1">
+						<input type="number" class="form-control" placeholder="국어" min="0" max="100">
+					</div>
+					<div class="col-md-2 py-1">
+						<input type="number" class="form-control" placeholder="영어" min="0" max="100">
+					</div>
+					<div class="col-md-2 py-1">
+						<input type="number" class="form-control" placeholder="수학" min="0" max="100">
+					</div>
+					<div class="col-md-4 py-1 text-center">
+						<button type="button" class="btn btn-primary" onclick="saveData(this, 0);">저장</button>
+						<button type="reset" class="btn btn-danger">다시작성</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="scores my-5">
+			<div>
+				<i class="fas fa-edit"></i>
+				<span class="f-125">성적 리스트</span>
+			</div>
+			<table class="score-tb table table-bordered table-stripe table-hover my-2">
+				<colgroup>
+					<col style="width: 20%;">
+					<col style="width: 15%;">
+					<col style="width: 15%;">
+					<col style="width: 15%;">
+					<col style="width: 35%;">
+				</colgroup>
+				<thead class="text-center">
+					<tr>
+						<th>이름</th>
+						<th>국어</th>
+						<th>영어</th>
+						<th>수학</th>
+						<th>관리</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <tr>
+						<td>홍길동</td>
+						<td>80점</td>
+						<td>90점</td>
+						<td>75점</td>
+						<td class="text-center">
+							<button class="btn btn-success">수정</button>
+							<button class="btn btn-danger">삭제</button>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+			<ul class="pager my-4 pagination justify-content-center">
+				<!--
+				<li class="page-item page-first " data-page="6">
+					<span class="page-link"><i
+							class="fas fa-angle-double-left"></i></span>
+				</li>
+				<li class="page-item page-prev " data-page="8"><span class="page-link"><i class="fas fa-angle-left"></i></span>
+				</li>
+				<li class="page-item page-ct " data-page="7"><span class="page-link">7</span></li>
+				<li class="page-item page-ct " data-page="8"><span class="page-link">8</span></li>
+				<li class="page-item page-ct active" data-page="9"><span class="page-link">9</span></li>
+				<li class="page-item page-next " data-page="10"><span class="page-link"><i
+							class="fas fa-angle-right"></i></span></li>
+				<li class="page-item page-last " data-page="10"><span class="page-link"><i
+							class="fas fa-angle-double-right"></i></span></li>
+				-->
+			</ul>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

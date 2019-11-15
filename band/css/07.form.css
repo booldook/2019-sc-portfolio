@@ -1,0 +1,12 @@
+.wrap {width: 100%; max-width: 800px; margin: 0 auto;}
+body {height: 5000px;}
+h1.wrap {margin: 16px auto; padding: 36px; background-color: #ddd; color: midnightblue; 
+	border-radius: 5px;
+	/* box-shadow: 가로이동거리 세로이동거리 blur 컬러 */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+
+.joins {border: 1px solid #ccc; padding: 16px;}
+.joins > li:not(:last-child) {border-bottom: 1px solid #ccc;}
+.tit {float: left; width: 20%; padding: 12px 16px;}
+.cont {float: left; width: 80%; padding: 6px;}
+.bts {padding: 16px 0;}

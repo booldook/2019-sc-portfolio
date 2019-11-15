@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Eco shop</title>
+	<link rel="stylesheet" href="../css/fa.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base-bootstrap.css">
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+</head>
+<body>
+	<div class="container p-3">
+		<table class="table table-bordered">
+			<thead></thead>
+			<tbody></tbody>
+		</table>
+	</div>
+<script>
+for(var i=2, html=''; i<=9; i++) {
+	html = '<tr>';
+	for(var j=1; j<=9; j++) {
+		html += '<td>'+i+' * '+j+' = '+(i*j)+'</td>';
+	}
+	html+= '</tr>';
+	$(".table tbody").append(html);
+}
+</script>
+</body>
+</html>

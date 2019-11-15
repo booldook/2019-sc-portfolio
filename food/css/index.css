@@ -1,0 +1,63 @@
+/* 공통사항 */
+@import url('https://fonts.googleapis.com/css?family=Karma&display=swap');
+body {font-family: 'Karma', serif;}
+.wrap {width: 100%; max-width: 1180px; margin: 0 auto;}
+
+/* tops */
+.tops {font-size: 24px;}
+.tops > div {padding: 16px;}
+.tops > .navi {float: left; cursor: pointer;}
+.tops > .navi:hover {background-color: #ccc;}
+.tops > .mail {float: right;}
+.tops > .logo {text-align: center;}
+/* foods */
+.foods {border-bottom: 1px solid #ccc;}
+.foods > ul {margin-top: 50px; 
+	display: flex; flex-wrap: wrap; justify-content: space-between;}
+.food {text-align: center;
+	flex: 24% 0 1; margin-bottom: 1%;}
+	.food-tit {font-size: 24px; margin: 12px 0 16px 0; color: black;}
+.pager {width: 240px; margin: 50px auto;}
+	.pager > li {float:	left; width: 40px; height: 40px; text-align: center; line-height: 40px; cursor: pointer;}
+	.pager > li:hover {background-color: #111; color: #f8f8f8;}
+	.pager > li:nth-child(2) {background-color: #111; color: #f8f8f8;}
+	.pager > li:nth-child(2):hover {background-color: #ccc; 
+		color: #111;}
+
+/* abouts */
+.abouts {padding: 80px 0; border-bottom: 1px solid #999; text-align: center;}
+.abouts > h2 {margin-bottom: 50px;}
+.abouts > .tit {margin-top: 40px; font-size: 18px; font-weight: bold; color: #000;}
+.abouts > .stit {padding: 20px 0; font-style: italic;}
+
+/* footer */
+.footers {margin: 80px 0;}
+.footers > li {width: 32%; float: left; padding: 8px;}
+.footers > li:nth-child(2) {margin: 0 2%;}
+.footers h3 {font-size: 24px; padding: 12px 0;}
+.footers .copyright {padding: 12px 0;}
+.posts > :not(:last-child) {border-bottom: 1px solid #ccc;}
+.blog .post {padding: 12px 8px 8px 8px; cursor: pointer;}
+.blog .post:hover {background-color: #ccc;}
+.blog .pic {width: 15%; float: left;}
+.blog .cont {width: 80%; float: right;}
+.post h5 {font-size: 18px;}
+.tag {display: inline-block; background-color: #ccc; 
+	padding: 4px 6px; margin: 0 8px 8px 0;}
+.tag-list > :first-child {background-color: #111; color: #f8f8f8; font-size: 18px;}
+
+/* 태블릿 세로 */
+@media screen and (max-width: 992px) {
+	
+}
+
+/* 스마트폰 가로 */
+@media screen and (max-width: 768px) {
+	.foods > ul {justify-content: space-evenly;}
+	.food {flex: 48% 0 1;}
+}
+
+/* 스마트폰 세로 */
+@media screen and (max-width: 576px) {
+	.food {flex: 96% 0 1;}
+}

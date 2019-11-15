@@ -1,0 +1,112 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Nanum Pen Script', cursive; */
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, input, select, button {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+
+/* 순서를 나타내는 리스트 */
+ol, ul, li, dl, dt, dd {list-style: none;}
+
+/* 버튼, 폼, 이미지 */
+input, button {border: none; padding: 0; margin: 0;}
+img {
+	/* 이미지를 inline-block에서 block으로 바꿔서 글씨 속성을 제거하고 div처럼 사용함 */
+	display: block;	
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 공통클래스 */
+.img {width: 100%;}
+.img2 {max-width: 100%;}
+
+.tc {text-align: center;}
+.tl {text-align: left;}
+.tr {text-align: right;}
+
+.fl {float: left;}
+.fr {float: right;}
+.clear:after {
+	display: block;
+	content: '';
+	clear:both;
+}
+
+/* Form 요소 */
+.ins {
+	padding: 8px;
+	color: #444;
+	font-size: 16px;
+	border: 1px solid #ccc;
+}
+
+.ins-dark {
+	background-color: #222;
+	color: #f1f1f1;
+}
+
+.ins-rnd {
+	border-radius: 4px;
+}
+
+.ins-4 {width: 40px;}
+.ins-5 {width: 50px;}
+.ins-6 {width: 60px;}
+.ins-7 {width: 70px;}
+.ins-8 {width: 80px;}
+.ins-9 {width: 90px;}
+.ins-10 {width: 100px;}
+.ins-11 {width: 110px;}
+.ins-12 {width: 120px;}
+.ins-1p {width: 10%;}
+.ins-2p {width: 20%;}
+.ins-3p {width: 30%;}
+.ins-4p {width: 40%;}
+.ins-5p {width: 50%;}
+.ins-6p {width: 60%;}
+.ins-7p {width: 70%;}
+.ins-8p {width: 80%;}
+.ins-9p {width: 90%;}
+.ins-0p {width: 100%;}
+
+.ta {padding: 16px; font-size: 16px; color: #444; 
+	border: 1px solid #ccc;}
+.ta-rnd {border-radius: 4px;}
+.ta-5 {width: 50%;}
+.ta-6 {width: 60%;}
+.ta-7 {width: 70%;}
+.ta-8 {width: 80%;}
+.ta-9 {width: 90%;}
+.ta-10 {width: 100%;}
+
+.bt {padding: 6px 16px; font-size: 16px; cursor: pointer;}
+.bt-rnd {border-radius: 4px;}
+.bt-orange {background-color: orangered; border: 1px solid #b63405; 
+	color: #f8f8f8;}
+.bt-green {background-color: seagreen; border: 1px solid #18492d; 
+	color: #f8f8f8;}
+.bt-red {background-color: #d11a1a; border: 1px solid #860707;
+	color:#f8f8f8;}
+.bt-ghost {background-color: transparent; border: 1px solid #333; 
+	color: #111;}
+.bt-ghost:hover {background-color: rgba(0,0,0,0.8); 
+	border: 1px solid #bbb; 
+	color: #f8f8f8;}
+.bt-ghost-dark {background-color: transparent; border: 1px solid #eee; 
+	color: #f8f8f8;}
+.bt-ghost-dark:hover {background-color: rgba(255,255,255,0.8); 
+	border: 1px solid #333; 
+	color: #111;}
+.bt-hover:hover {opacity: 0.8;}

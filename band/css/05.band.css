@@ -1,0 +1,97 @@
+/* 공통사항 */
+body {font-size: 14px; height: 5000px;}
+.wrap {margin: 0 auto; width: 100%; max-width: 800px; padding: 70px 15px;}
+.mn-tit {letter-spacing: 6px; font-size: 28px; text-align: center;}
+.sub-tit {text-align: center; color: #999; font-style: italic; 
+	font-size: 14px; padding: 20px 0;}
+
+/* tops */
+.tops {background-color: #111; color: #f8f8f8; 
+	position: fixed; z-index:9999; width: 100%; top: 0; left: 0;}
+.navi {float: left;}
+.search {float: right; padding: 12px 20px; cursor: pointer;}
+.search:hover {background-color: #f20;}
+.search .fa-bars {display: none;}
+.navi > div {float: left; padding: 12px 20px; cursor: pointer;}
+.navi > div:hover {background-color: #ddd; color: #111;}
+
+/* bans */
+.bans {position: relative; color:white;}
+.bans > h2 {position: absolute; 
+	bottom: 10%; width: 100%; text-align: center;}
+.bans > h4 {position: absolute; 
+	bottom: 5%; width: 100%; text-align: center;}
+
+/* bands */
+.cont {text-align: justify; line-height: 1.8;}
+.member {margin-top: 50px;}
+.member > div {width: 33.3333%; float: left;}
+.member .tit {text-align: center; padding: 16px 0;}
+.member .photo {padding: 0 18%;}
+.member .photo img {border-radius: 8px;}
+
+/* tours */
+.tours {background-color: #000;}
+.tours .mn-tit {color: #f8f8f8;}
+.dates {color: #555; background-color: #f1f1f1; border: 1px solid #ccc; 
+	margin-top: 30px;}
+.dates > li {padding: 12px 16px;}
+/* 
+:first-child  => 첫번째 자식
+:last-child   => 마지막 자식
+:nth-child(n) => n번째 자식
+*/
+.dates > li:not(:last-child) {border-bottom: 1px solid #ccc;}
+.dates span {background-color: #f20; color: #f8f8f8; padding: 4px 8px; 
+	margin-left: 30px;}
+.dates .badge {float: right; background-color: #111; color: #f8f8f8; 
+	padding: 2px 10px; border-radius: 50%;}
+/*
+.city div   => .city 안에있는 자손포함 모든 div들
+.city > div => .city 바로 아래있는(자식만) div들
+div.city    => 모든 div들 중에 .city라는 클래스를 가지고 있는 div
+*/
+.cities {margin-top: 30px;}
+	.city {float: left; width: 32%;}
+	.city:nth-child(2) {margin: 0 2%;}
+		.city-img:hover {opacity: 0.7;}
+		.city-datas {padding: 16px; background-color: #f8f8f8;}
+		.city-name {font-weight: bold; color: #000; margin-bottom: 16px;}
+		.city-date {color: #555; margin-bottom: 16px;}
+		.city-cont {margin-bottom: 16px;}
+			.bt-buy {background-color: #111; color: #f8f8f8; 
+				padding: 8px 12px; float: left; cursor: pointer;}
+			.bt-buy:hover {background-color: #ccc; color: #000;}	
+
+/* Contact */
+.contact-form {margin: 20px 0;}
+.contact-form > ul {width: 50%; float: left;}
+	.contact-info {font-size: 18px;}
+	.contact-info > li {padding: 4px 0;}
+	.contact-info > li > i {width: 30px;}
+	.contact-mail > form > div {margin: 8px 0;}
+	.contact-mail .name, 
+	.contact-mail .email {float:left; width: 49%;}
+	.contact-mail .name {margin-right: 2%;}
+	.contact-mail .bt-send {padding: 10px 14px; background-color: #111; color: #f8f8f8;}
+
+	/* Map */
+	.map > img {filter: grayscale(50%);}
+
+	/* footer */
+	.footers .brands {font-size: 24px;}
+	.footers .copyright {margin-top:20px;}
+
+
+/* 반응형 처리 */
+
+@media screen and (max-width: 640px) {
+	.search .fa-bars {display: inline-block;}
+	.search .fa-search {display: none;}
+	.search:hover {background-color: #ccc; color: #333;}
+	.navi-bt {display: none;}
+	.member > div {width: 100%;}
+	.city {width: 96%; margin: 2%;}
+	.city:nth-child(2) {margin: 2%;}
+	.contact-form > ul {width: 96%; margin: 2%;}
+}

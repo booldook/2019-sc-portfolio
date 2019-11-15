@@ -1,0 +1,10 @@
+.top {
+	width: 100%;
+	background-color: #111;
+	color: #f8f8f8;
+	padding: 0 12px;
+}
+.top > .logo {float: left; padding: 12px;}
+.top > .navis {float: right;}
+.top > .navis > div {float: left; padding: 12px; cursor: pointer;}
+.top > .navis > div:hover {background-color: #f1f1f1; color: #111;}

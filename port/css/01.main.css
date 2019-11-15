@@ -1,0 +1,130 @@
+/* 공통사항 */
+html, body {height: 100%; color: #111;}
+.wrap {width: 100%; height: 100%; max-width: 1800px; margin: 0 auto;}
+.lt-navi {float: left;
+	width: 300px; height: 100%; position: fixed;}
+.rt-cont {float: right; background-color: #eee;
+	width: calc(100% - 300px); height: 5000px;}
+
+/* .bar {height: 5px; background-color: #bbb; margin: 20px 0;} */
+
+/* lt-navi */
+.lt-navi > .avatar {width: 40%; margin: 20px;}
+.lt-navi > .avatar > img {border-radius: 6px;}
+.lt-navi > .tit {padding: 16px 20px; font-size: 20px; font-weight: bold;}
+.lt-navi > .stit {padding: 16px 20px; color: #999;}
+.lt-navi > .navi {padding: 10px 20px; cursor: pointer;}
+.lt-navi > :nth-child(4) {color: rgb(41, 159, 163);}
+.lt-navi > .navi:hover {background-color: #ccc;}
+.lt-navi > .navi .fas {margin-right: 20px;}
+.lt-navi > .brands {padding: 20px;}
+
+/* rt-cont */
+/*
+display : block, inline, inlin-block, none
+block이 기본값: div, p, ul, li, h1, h2...h6 ...
+inline이 기본값: span, i, b... 
+inline-block: img
+none: 안보이게 하기
+*/
+
+.rt-cont > div > h1 {padding: 16px 0;}
+.navis {margin-top: 16px;}
+.navis > li {padding: 8px 16px; display: inline-block;}
+.navis > li:first-child {padding-left: 0;}
+.navis > .navi {background-color: #fff; cursor: pointer;}
+.navis > .navi-def {background-color: #111; color: #fff; 
+	cursor: pointer;}
+.navis > .navi:hover {background-color: #ccc;}
+.navis > .navi-def:hover {background-color: #ccc; color: #000;}
+.rt-cont .bar {height: 6px; background-color: #ccc; margin: 16px 0;}
+
+
+/* 사진 */
+.pics {margin-top:40px; 
+	display: flex; flex-wrap: wrap; justify-content: space-between;}
+.pics > .pic {flex: 32.6% 0 1; margin-bottom: 48px;}
+.pics .pic-tit {padding: 16px 0; font-weight: bold;}
+.pics .pic-cont {color: #333;}
+
+.pager {width: 240px; margin: 0 auto; display: flex;}
+.pager > li {width: 40px; height: 40px; cursor: pointer;
+display: flex; align-items: center; justify-content: center;}
+.pager > li:hover {background-color: #111; color: #f8f8f8;}
+.pager .active {background-color: #111; color: #f8f8f8;}
+
+/* my-photo */
+.my-photo {display: flex; justify-content: space-between; margin-top: 5rem;}
+.my-photo > li {flex: 49.5% 0 1;}
+
+/* about */
+.about {margin-top: 3rem;}
+.about > h3 {font-weight: bold; font-size: 1.5rem;}
+.about > p {color: #333; margin-top: 1rem;}
+
+/* skills */
+.skills {margin-top: 3rem;}
+.skills > h4 {font-size: 1.25rem;}
+.skills > .skill {margin-top: 1rem;}
+.skills .skill-tit {margin: 1rem 0 0.75rem 0;}
+.skills .skill-bar {background-color: #bbb;}
+.skills .graph {background-color: #666; text-align: center; padding: 0.5rem 0; color: #fff;}
+.skill > li:nth-child(1) .graph {width: 95%;}
+.skill > li:nth-child(2) .graph {width: 85%;}
+.skill > li:nth-child(3) .graph {width: 80%;}
+.bt-download {margin-top: 2rem; padding: 0.75rem 1.25rem; cursor: pointer;
+	background-color: #666; color: #fff; display: inline-block;}
+.bt-download:hover {background-color: #ccc; color: #111;}	
+
+/* charges */
+.charges {margin-top: 3rem;}
+.charges > h4 {margin: 1rem 0; font-size: 1.25rem;}
+.charge-type {display: flex; justify-content: space-between; margin-top: 2rem;}
+.charge-type > :nth-child(2) .tit {background-color: #009688;}
+.charge-type > .charge {flex: 32% 0 1; text-align:center; border: 1px solid #999;}
+.charge > ul > li {padding: 1rem;}
+.charge .uline {border-bottom: 1px solid #bbb; 
+	background-color: #fff;}
+.charge .tit {background-color: #111; color: #f8f8f8; 
+	font-size: 1.5rem; padding: 2rem;}
+	
+.charge .price > span {font-size: 2rem;}
+.charge .bt-signup {padding: 1rem 1.5rem; background-color: #009688; color: #fff; font-size: 1.125rem; cursor: pointer;}
+.charge .bt-signup:hover {background-color: #111;}
+
+/* contacts */
+.contacts {margin-top: 3rem; padding: 1.5rem; 
+	background-color: #aaa;
+	background-image: linear-gradient(#aaa, #ccc);}
+.contacts > h3 {margin-bottom: 3rem;}
+.contacts > .infos {display: flex; font-size: 0.875rem; line-height: 2rem;}
+.contacts > .infos > li {flex: 33% 1 1; background-color: #777; 
+	padding: 1.25rem; color: #fff; text-align: center;}
+.contacts > .infos > li:nth-child(2) {background-color: #009688;}
+.contacts > .infos .fas {font-size: 2rem;}
+.contacts hr {border-color: #eee; margin: 2rem 0;}
+
+.contact > li {margin-bottom: 1rem;}
+.contact input {width: 100%;}
+#bt-send-msg {padding: 0.75rem 1.25rem; font-size: 1rem; background-color: #111; color: #f8f8f8; cursor: pointer;}
+#bt-send-msg:hover {background-color: #eee; color: #111;}
+
+
+/* footer */
+.footers {padding: 2rem 1.5rem; background-color: #888; 
+	color: #f8f8f8; display: flex; justify-content: space-between;}
+.footers > li {flex: 32% 0 1; padding: 8px;}
+.footers h3 {font-size: 24px; padding: 12px 0;}
+.footers .copyright {padding: 12px 0;}
+.posts > :not(:last-child) {border-bottom: 1px solid #ccc;}
+.blog .post {padding: 12px 8px 8px 8px; cursor: pointer; 
+	display: flex; justify-content: space-between;}
+.blog .post:hover {background-color: #ccc;}
+.blog .pic {flex: 15% 0 1;}
+.blog .cont {flex: 80% 0 1;}
+.post h5 {font-size: 18px;}
+.tag {display: inline-block; background-color: #999; color: #000; 
+	padding: 2px 4px; margin: 0 8px 8px 0; font-size: 0.75rem;}
+.tag-list > :first-child {background-color: #111; color: #f8f8f8; font-size: 18px;}
+
+

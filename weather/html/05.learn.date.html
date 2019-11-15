@@ -1,0 +1,29 @@
+<script>
+// Date 객체
+const log = console.log;
+const clear = console.clear;
+
+// ISO - "2019-08-23 11:17:25"
+var sTime = "2019-08-23 11:17:25";	// GMT 
+var d = new Date(sTime);
+var dt = d.getTime();
+log(typeof d, d, dt);
+
+// GMT -> GMT+0900
+var sTime = "2019-08-23 11:17:25";	// GMT
+var gts = new Date(sTime).getTime();
+var kts = gts + (9 * 60 * 60 * 1000);
+var kTime = new Date(kts);
+log(sTime);
+log(kTime);
+var monthArr = ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"];
+var year = kTime.getFullYear() + "년 ";	// 2019
+var month = monthArr[kTime.getMonth()] + " "; // 7 (0 ~ 11)
+var day = kTime.getDate() + "일 "; // 1 ~ 31
+var hour = kTime.getHours() + "시 "; // 0 ~ 23
+var min = kTime.getMinutes(); // 0 ~ 59
+var sec = kTime.getSeconds(); // 0 ~ 59
+var week = kTime.getDay();		// 0 ~ 6 (일 ~ 토)
+var disTime = year + month + day + hour + "예보";
+log(disTime, week);
+</script>

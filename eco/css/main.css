@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+/* font-family: 'PT Serif', serif; */
+/* 
+녹색: #66a765
+갈색: #a8715c
+*/
+
+.text-def {color: #66a765;}
+.text-sub {color: #a8715c;}
+.bg-def {background-color: #66a765;}
+.bg-sub {background-color: #a8715c;}
+.pt-serif {font-family: 'PT Serif', serif;}
+.tip {background-color: #111; position: absolute; padding: 6px 12px; color: #f8f8f8; font-size: 0.75rem; width: 90px; z-index: 9999; border-radius: 4px; left: -30px; top: 30px; transform: translateY(20px); opacity: 0; transition: all 0.5s;}
+.tip:after {display: block; content:''; width: 10px; height: 10px; background-color: #111; transform: rotate(45deg) translateX(-50%); position: absolute; top: 0px; left: 50%;}
+
+.top-sub {top: 60px; left: -30px; z-index: 9999; 
+	display: flex; box-shadow: 0 3px 5px rgba(0,0,0,0.2); border: 1px solid #ddd; position: absolute; background-color: #fff; 
+	display: none; opacity: 0;}
+.top-sub-col {width: 300px; min-height: 400px;}
+
+.slogan-icons > li:hover {color: #66a765;}
+
+/* transition 복습 */
+/*
+.box {width: 100px; height: 100px; background-color: #111; transition: all 1s;}
+.box:hover {transform: translateY(50px);}
+*/
+
+
+
+/* Media */
+/* 0 ~ 575 - 스마트폰 세로 */
+.top-menu {display: block;}
+.logo-img {display: none;}
+.navi-wrap {display: none;}
+
+.banner-wrap {font-size: 1rem; /* 8px */}
+.banner-img {width: 130%; margin-left: -15%;}
+.banner-slogan {top: 2.5em;}
+.banner-slogan > h1 {font-size: 2em;}
+.banner-slogan > h4 {color: #a8715c; font-size: 1.5em;}
+.banner-slogan > p {font-size: 1em;}
+
+.item:hover {color: #66a765;}
+.item > li:first-child {max-width: 70%; margin: auto;}
+.item img {transition: all 1s;}
+.item-img-hover {transform: scale(1.2);}
+
+.ads-slogan {font-size: 0.25rem;}
+.ads-slogan .title {font-size: 3em;}
+.ads-slogan .desc {font-size: 1.25em; margin: 1.25em 0;}
+.ads-slogan .btn {padding: 0.5em 1em;}
+
+.popular-wrap .prd {flex: 0 0 98%;}
+.popular-wrap .prd-title {transition: all 1s;}
+.popular-wrap .prd-title:hover {color: #66a765;}
+.popular-wrap .btn-success {background-color: #66a765;}
+.popular-wrap .btn-success:hover {
+	background-color: #a8715c;
+	border-color: #e6945e;
+}
+
+.popular-wrap .prd-icon {position: absolute; 
+	background-color: rgba(250, 240, 200, 0.9); width: 50px; height: 50px; 
+	line-height: 50px; text-align: center; border-radius: 25px; right: 1rem;
+	transition: all 0.7s; opacity: 0;}
+.popular-wrap .prd-icon:hover {color: #f8f8f8; background-color: #66a765;}
+.popular-wrap .prd-view {top: 1rem;}
+.popular-wrap .prd-login {top: 5rem;}
+.popular-wrap .prd-compare {top: 9rem;}
+
+/*
+.footer-wrap {
+	background: #e0f4db url(../img/ecofood_04_2048x.png) no-repeat top center;
+	background-size: 100% auto; min-height: 600px; border: 1px solid red;}
+*/
+.footer-wrap {background-color: #e0f4db;}
+.footer-wrap .list {color: #a8715c;}
+.footer-wrap .list:hover {color: #66a765;}
+.footer-wrap .fab {color: #66a765;}
+.footer-wrap .fab:hover {color: #222;}
+.footer-wrap .list {display: none;}
+.footer-wrap .title {border-bottom: 1px solid #66a765; cursor: pointer;}
+.footer-wrap .title:hover {color: #66a765;}
+
+.bt-top {position: fixed; bottom: -4.5rem; right: 0; z-index: 9999; cursor: pointer;
+	transition: all 0.5s; 
+	padding: 1rem 1.5rem 1rem 1.5rem; 
+	background-color: #66a765; 
+}
+.bt-top:hover {background-color: #a8715c; padding: 0.7rem 1.5rem 1.3rem 1.5rem;}
+.bt-top-show {transform: translateY(-7rem);}
+
+/* 576 ~ 767 - sm - 스마트폰 가로 */
+@media screen and (min-width: 576px) {
+	.item > li:first-child {max-width: 100%;}
+	.ads-slogan {font-size: 0.5rem;}
+	.popular-wrap .prd {flex: 0 0 49%;}
+}
+/* 768 ~ 991 - md - 태블릿 세로 */
+@media screen and (min-width: 768px) {
+	.banner-wrap {font-size: 1.25rem; /* 8px */}
+	.ads-slogan {font-size: 0.75rem;}
+	.popular-wrap .prd {flex: 0 0 32%;}
+	.footer-wrap .list {display: block;}
+	.footer-wrap .title {border-bottom: none; cursor: text;}
+	.footer-wrap .title:hover {color: inherit;}
+	.footer-wrap .title > span {display: none;}
+}
+/* 992 ~ 1199 - lg - 태블릿 가로 */
+@media screen and (min-width: 992px) {
+	.top-menu {display: none;}
+	.logo-img {display: inline-block;}
+	.navi-wrap {display: flex;}
+	.banner-wrap {font-size: 1.5rem; /* 8px */}
+	.ads-slogan {font-size: 1rem;}
+	.popular-wrap .prd {flex: 0 0 24%;}
+}
+/* 1200 ~ - xl - PC */
+@media screen and (min-width: 1200px) {
+
+}
+

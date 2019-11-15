@@ -1,0 +1,112 @@
+<!-- 
+tag : element
+tag 의 속성 => attribute
+tag 의 속성의 값 => value
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form을 알아봐요~</title>
+	<link rel="stylesheet" href="../css/fa.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/07.form.css">
+</head>
+<body>
+	<h1 class="wrap">Form elements(요소들)</h1>
+	<form action="#" method="get" name="join-form">
+		<ul class="joins wrap">
+			<li class="clear">
+				<div class="tit">아이디: </div>
+				<div class="cont">
+					<input type="text" name="userid" class="ins ins-rnd"
+					placeholder="아이디를 입력하세요.">
+				</div>
+			</li>
+			<li class="clear">
+				<div class="tit">패스워드: </div>
+				<div class="cont">
+					<input type="password" name="userpw" class="ins ins-rnd">
+				</div>
+			</li>
+			<li class="clear">
+				<div class="tit">패스워드확인: </div>
+				<div class="cont">
+					<input type="password" name="userpw2" class="ins ins-rnd">
+				</div>
+			</li>
+			<li class="clear">
+				<div class="tit">이름: </div>
+				<div class="cont">
+					<input type="text" name="username" class="ins ins-rnd">
+				</div>
+			</li>
+			<li class="clear">
+				<div class="tit">성별: </div>
+				<div class="cont">
+					<input type="radio" name="gender" id="gender-m">
+					<label for="gender-m">남자</label>
+					<input type="radio" name="gender" id="gender-w">
+					<label for="gender-w">여자</label>
+					<input type="radio" name="gender" id="gender-a" checked>
+					<label for="gender-a">외계인</label>
+				</div>
+			</li>
+			<!-- li.clear>.tit+.cont -->
+			<li class="clear">
+				<div class="tit">취미:</div>
+				<div class="cont">
+					<input type="checkbox" name="hobby" id="hobby1" checked>
+					<label for="hobby1">영화감상</label>
+					<input type="checkbox" name="hobby" id="hobby2">
+					<label for="hobby2">음악감상</label>
+					<input type="checkbox" name="hobby" id="hobby3">
+					<label for="hobby3">등산</label>
+					<input type="checkbox" name="hobby" id="hobby4">
+					<label for="hobby4">낚시</label>
+				</div>
+			</li>
+			<li class="clear">
+				<div class="tit">전화번호: </div>
+				<div class="cont">
+					<select name="tel1" class="ins ins-rnd">
+						<option value="010" selected>010</option>
+						<option value="011">011</option>
+						<option value="016">016</option>
+						<option value="017">017</option>
+						<option value="018">018</option>
+						<option value="019">019</option>
+					</select>
+					- 
+					<input type="text" name="tel2" class="ins ins-rnd ins-6 tc">
+					- 
+					<input type="text" name="tel3" class="ins ins-rnd ins-6 tc">
+				</div>
+			</li>
+			<li class="clear">
+				<div class="tit">자기소개:</div>
+				<div class="cont">
+					<textarea name="ta-story" class="ta ta-rnd ta-8" rows="5" placeholder="자기소개를 작성해 주세요"></textarea>
+				</div>
+			</li>
+			<li class="tc bts">
+				<!-- <input type="button" value="버튼">
+				<input type="submit" value="전송">
+				<input type="reset" value="재작성"> -->
+				<button type="button" 
+				class="bt bt-orange bt-rnd bt-hover">확인</button>
+				<button type="submit" 
+				class="bt bt-green bt-rnd bt-hover">전송</button>
+				<button type="reset" 
+				class="bt bt-red bt-rnd bt-hover">재작성</button>
+				<button type="button" 
+				class="bt bt-ghost bt-rnd">고스트</button>
+				<button type="button" 
+				class="bt bt-ghost-dark bt-rnd">고스트 다크</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

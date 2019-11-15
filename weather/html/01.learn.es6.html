@@ -1,0 +1,89 @@
+<script>
+// 변수와 함수의 이야기
+const log = console.log;
+const clear = console.clear;
+
+// 함수선언문
+test();
+function test() {
+	log("test()");
+}
+
+// ES5 함수표현식
+var test2 = function() {
+	log("test2()");
+}
+test2();
+
+// ES6 함수표현식
+const test3 = () => log("test3()");
+test3();
+
+// variable 변수 - 변하는 수
+var a;
+a = 10;
+a = 20;
+
+var b = 10;
+
+// ES6에서 let, const가 추가됨
+// constant 상수 - 변하지 않는 수 - 선언과 동시에 값을 대입
+const c = 30;
+const pi = 3.141592;
+
+// 변수의 스코프(범위)
+var d = 10;
+var d = 40;
+log(a);
+
+let e = 20;
+//let e = 50;
+
+
+clear();
+let hongmin = "글로벌홍민";
+log(hongmin);
+function test4() {
+	let hongmin = "동네홍민";
+	log(hongmin);
+}
+test4();
+log(hongmin);
+
+for(var i=0; i<10; i++) {
+
+}
+log(i);
+
+for(let j=0; j<10; j++) {
+	log(j);
+}
+//log(j);
+
+// 변수의 type (6가지 -> 7가지)
+// primitive(원시, 태초) type 5가지
+			//number, string, boolean, null(빈값), undefined(지정되지 않은 값)
+// reference(참조) 1가지 - function, Array ..
+// Object(객체) 1가지(ES6) - object, map, set, weakset
+
+clear();
+var f = 10;
+var g = f;	// f:10, g:10
+log(f, g);
+f = 20;			// f:20, g:10
+log(f, g);
+
+var h = [1, 2, 3];
+var k = h;
+log(h, k);
+h[1] = 200;
+log(h, k);
+
+clear();
+const m = 10;
+// m = 20; error
+const arr = [1, 2, 3, 4, 5];
+arr[2] = 300;
+arr[5] = 400;
+log(arr);
+</script>
